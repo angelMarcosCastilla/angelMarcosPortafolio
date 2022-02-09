@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  background-color: var(--gray--100);
+  margin-bottom: 1rem;
+}
+
+
+.containerMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-index-500);
+  border-top: 1px solid var(--gray-200);
+}
+
+@media screen and (min-width: 590px) {
+  .containerMenu{
+    position: static;
+    border: 0;
+    width: 50%;
+  }
+  
+}
+
+.containerMenu ul {
+  font-size: 1rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+

@@ -1,0 +1,30 @@
+.switch {
+  position: relative;
+  width: 60px;
+  height: 18px;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: var(--color-primary-100);
+  border-radius: 10px;
+}
+
+.toggleSwitch {
+  position: absolute;
+  padding: 3px;
+  width: 35px;
+  height: 35px;
+  background-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--black-500);
+  transition: transform 0.2s ease-in-out;
+  display: grid;
+  place-content: center;
+}
+
+.toggleSwitchActive{
+  transform: translateX(26px);
+}

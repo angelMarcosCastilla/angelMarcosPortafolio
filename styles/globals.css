@@ -1,11 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,600&family=Roboto&display=swap");
+
+:root {
+  --color-primary-100: #518fe1;
+  --color-primary-200: #1f6fd8;
+  --color-primary-300: #065fd4;
+  --color-primary-400: #054caa;
+  --color-primary-500: #044394;
+
+  --black-100: #2f3033;
+  --black-200: #24262c;
+  --black-300: #0c0e15;
+  --black-400: #0a0b11;
+  --black-500: #050608;
+
+ 
+  --gray-100:#f9fbfe;
+  --gray-200:#f4f8fd;
+  --gray-300:#f3f7fd;
+  --gray-400:#dbdee4;
+  --gray-500:#8e8f91;
+
+  --white: #fff;
+
+  --z-index-100: 100;
+  --z-index-300: 100;
+  --z-index-500: 100;
+  --z-index-700: 100;
+  
+  --yellow-100: #fff6e6;
+  --yellow-200: #ffdb9e;
+  --yellow-300: #ffce7a;
+  --yellow-400: #ffba42;
+  --yellow-500: #e5a638;
+
+  --size: 14px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--gray-300);
+  font-family: "Roboto", sans-serif;
+  color: var(--gray-500);
+  font-size: var(--size);
 }
-
+@media screen and (min-width: 600px) {
+  :root {
+    --size: 16px;
+  }
+}
+header,
+main,
+footer,
+section {
+  width: 98%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -14,10 +69,23 @@ a {
 * {
   box-sizing: border-box;
 }
-section{
- height: 100vh;
+
+html {
+  scroll-behavior: smooth;
 }
 
-html{
-  scroll-behavior: smooth;
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "raleway", sans-serif;
+  font-weight: 700;
 }

@@ -1,0 +1,47 @@
+.banner {
+  min-height: 80vh;
+  border-left: 4px solid var(--color-primary-100);
+  border-right: 4px solid var(--color-primary-100);
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.titleBanner {
+  font-weight: bold;
+  font-size: 2.4rem;
+  background: var(--color-primary-300);
+  background: -webkit-linear-gradient(
+    8deg,
+    var(--color-primary-100),
+    var(--color-primary-500)
+  );
+  background: linear-gradient(
+    8deg,
+    var(--color-primary-100),
+    var(--color-primary-500)
+  );
+  background-clip: text;
+  color: transparent;
+
+}
+@media screen and (min-width: 600px) {
+  .titleBanner {
+    font-size: 4rem;
+  }
+}
+
+.copyBanner {
+  font-size: 1.2rem;
+  margin-top: -10px;
+  color: var(--color-primary-100);
+}
+
+@media screen and (min-width: 600px) {
+  .copyBanner {
+    margin-top: -25px;
+  }
+}
