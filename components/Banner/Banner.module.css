@@ -1,18 +1,44 @@
 .banner {
-  min-height: 80vh;
+  min-height: 70vh;
   border-left: 4px solid var(--color-primary-100);
   border-right: 4px solid var(--color-primary-100);
+  position: relative;
+  height: 75vh;
+  margin-bottom: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  overflow: hidden;
   display: grid;
   place-content: center;
 }
 
+.banner::after,
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.banner::after {
+  top: -25px;
+  left: -25px;
+  background-color: var(--yellow-200);
+  box-shadow: 0 0 200px 50px var(--yellow-200);
+}
+.banner::before {
+  right: -25px;
+  bottom: -25px;
+  background-color: var(--purple-100);
+  box-shadow: 0 0 200px 50px var(--purple-100);
+}
 .content {
   text-align: center;
 }
 
 .titleBanner {
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   background: var(--color-primary-300);
   background: -webkit-linear-gradient(
     8deg,
@@ -26,7 +52,6 @@
   );
   background-clip: text;
   color: transparent;
-
 }
 @media screen and (min-width: 600px) {
   .titleBanner {
@@ -36,12 +61,47 @@
 
 .copyBanner {
   font-size: 1.2rem;
-  margin-top: -10px;
-  color: var(--color-primary-100);
+  margin-top: -15px;
+  color: var(--yellow-500);
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 600px) {
   .copyBanner {
     margin-top: -25px;
+  }
+}
+
+.button {
+  padding: 0.8rem 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--color-primary-400);
+  color: white;
+  border: 1px solid var(--color-primary-500);
+}
+.button:hover {
+  opacity: 0.9;
+}
+
+.github {
+  color: var(--color-primary-500);
+  background-color: transparent;
+}
+.bannerActions {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .button {
+    flex: 1;
+  }
+  .bannerActions {
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }

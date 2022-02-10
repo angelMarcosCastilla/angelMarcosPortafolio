@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,600&family=Roboto&display=swap");
 
 :root {
-  --color-primary-100: #518fe1;
+  --color-primary-100: #6ba4f0;
   --color-primary-200: #1f6fd8;
   --color-primary-300: #065fd4;
   --color-primary-400: #054caa;
@@ -13,12 +13,11 @@
   --black-400: #0a0b11;
   --black-500: #050608;
 
- 
-  --gray-100:#f9fbfe;
-  --gray-200:#f4f8fd;
-  --gray-300:#f3f7fd;
-  --gray-400:#dbdee4;
-  --gray-500:#8e8f91;
+  --gray-100: #f9fbfe;
+  --gray-200: #f4f8fd;
+  --gray-300: #f3f7fd;
+  --gray-400: #dbdee4;
+  --gray-500: #8e8f91;
 
   --white: #fff;
 
@@ -26,12 +25,24 @@
   --z-index-300: 100;
   --z-index-500: 100;
   --z-index-700: 100;
-  
+
   --yellow-100: #fff6e6;
   --yellow-200: #ffdb9e;
   --yellow-300: #ffce7a;
   --yellow-400: #ffba42;
   --yellow-500: #e5a638;
+
+  --purple-100: #ca89f1;
+  --purple-200: #aa41e9;
+  --purple-300: #9512e3;
+  --purple-400: #8610cc;
+  --purple-500: #680d9f;
+
+  --red-100: #f383a1;
+  --red-200: #e92055;
+  --red-300: #e60742;
+  --red-400: #cf063b;
+  --red-500: #8a0428;
 
   --size: 14px;
 }

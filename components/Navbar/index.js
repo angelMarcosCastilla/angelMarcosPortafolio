@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className={style.navbar}>
       <Link href={"/"} passHref>
         <a>
-          <Image src={logo} alt="logo de angel marcos" />
+          <Image src={logo} width={45} height={40} alt="logo de angel marcos" />
         </a>
       </Link>
       <div className={style.containerMenu}>
