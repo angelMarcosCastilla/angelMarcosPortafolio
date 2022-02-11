@@ -3,8 +3,8 @@
   border-left: 4px solid var(--color-primary-100);
   border-right: 4px solid var(--color-primary-100);
   position: relative;
-  height: 75vh;
-  margin-bottom: 2rem;
+  height: 80vh;
+  margin-bottom: 3rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
   overflow: hidden;
@@ -29,8 +29,8 @@
 .banner::before {
   right: -25px;
   bottom: -25px;
-  background-color: var(--purple-100);
-  box-shadow: 0 0 200px 50px var(--purple-100);
+  background-color: var(--green-300);
+  box-shadow: 0 0 200px 50px var(--green-200);
 }
 .content {
   text-align: center;

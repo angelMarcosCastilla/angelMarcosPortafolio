@@ -43,7 +43,14 @@
   --red-300: #e60742;
   --red-400: #cf063b;
   --red-500: #8a0428;
-
+  
+  --green-100: #def7f0;
+  --green-200: #a4ead4;
+  --green-300: #72dfbe;
+  --green-400: #44d5a7;
+  --green-500: #16ca91;
+  --green-600: #12a173;
+  
   --size: 14px;
 }
 
@@ -90,7 +97,6 @@ a {
   cursor: pointer;
 }
 img {
-  display: block;
   max-width: 100%;
 }
 h1,
@@ -100,3 +106,9 @@ h4 {
   font-family: "raleway", sans-serif;
   font-weight: 700;
 }
+
+
+p{
+  line-height: 1.5rem;
+}
+

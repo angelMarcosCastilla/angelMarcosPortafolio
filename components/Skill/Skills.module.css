@@ -1,0 +1,8 @@
+.skill{
+  color:var(--gray-400);
+  text-align: center;
+}
+
+.skill p{
+  margin: 0;
+}

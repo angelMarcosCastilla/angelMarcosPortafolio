@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Aboutme from "../components/Aboutme.js";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Banner />
+        <Aboutme />
       </Layout>
     </>
   );
