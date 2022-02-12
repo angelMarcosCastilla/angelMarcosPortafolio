@@ -12,6 +12,8 @@
   place-content: center;
 }
 
+
+
 .banner::after,
 .banner::before {
   content: "";
@@ -23,15 +25,16 @@
 .banner::after {
   top: -25px;
   left: -25px;
-  background-color: var(--yellow-200);
-  box-shadow: 0 0 200px 50px var(--yellow-200);
+  background-color: var(--red-200);
+  box-shadow: 0 0 200px 30px var(--red-100);
 }
 .banner::before {
   right: -25px;
   bottom: -25px;
   background-color: var(--green-300);
-  box-shadow: 0 0 200px 50px var(--green-200);
+  box-shadow: 0 0 200px 40px var(--green-200);
 }
+
 .content {
   text-align: center;
 }

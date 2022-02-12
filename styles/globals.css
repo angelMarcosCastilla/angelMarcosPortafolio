@@ -10,8 +10,8 @@
   --black-100: #2f3033;
   --black-200: #24262c;
   --black-300: #0c0e15;
-  --black-400: #0a0b11;
-  --black-500: #050608;
+  --black-400: #001E3C;
+  --black-500: #0A1929;
 
   --gray-100: #f9fbfe;
   --gray-200: #f4f8fd;
@@ -43,42 +43,34 @@
   --red-300: #e60742;
   --red-400: #cf063b;
   --red-500: #8a0428;
-  
+
   --green-100: #def7f0;
   --green-200: #a4ead4;
   --green-300: #72dfbe;
   --green-400: #44d5a7;
   --green-500: #16ca91;
   --green-600: #12a173;
-  
+
   --size: 14px;
 }
 
-html,
+html, 
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--gray-300);
   font-family: "Roboto", sans-serif;
-  color: var(--gray-500);
   font-size: var(--size);
+  background-color: var(--gray-300);
+  color: var(--gray-500);
 }
 @media screen and (min-width: 600px) {
   :root {
     --size: 16px;
   }
-}
-header,
-main,
-footer,
-section {
-  width: 98%;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-}
+} 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -107,8 +99,22 @@ h4 {
   font-weight: 700;
 }
 
-
-p{
+p {
   line-height: 1.5rem;
 }
 
+.container {
+  width: 98%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark {
+  background-color: var(--black-400);
+  color: var(--gray-300);
+}
+
+.iconDark{
+  color: var(--color-primary-500)
+}

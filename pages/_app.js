@@ -1,10 +1,11 @@
+import ThemeProvider from "../Context/theme";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Component {...pageProps} />
-    </>
+    <ThemeProvider>
+      <Component {...pageProps} className="dark" />
+    </ThemeProvider>
   );
 }
 

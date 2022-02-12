@@ -1,14 +1,16 @@
 import React from "react";
+import useTheme from "../../hooks/useTheme";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 
 export default function Layout({ children }) {
+  const { isDarkMode } = useTheme();
   return (
     <>
-      <header>
+      <header className={isDarkMode && "dark"}>
         <Navbar />
       </header>
-      {children}
+      <main className={isDarkMode && "dark"}>{children}</main>
 
       <Footer />
     </>
