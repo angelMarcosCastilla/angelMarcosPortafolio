@@ -1,4 +1,4 @@
-import ThemeProvider from "../context/theme";
+import ThemeProvider from "../context/Theme";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
