@@ -26,18 +26,21 @@
   --z-index-500: 100;
   --z-index-700: 100;
 
+  --yellow-50: #fff9ee;
   --yellow-100: #fff6e6;
   --yellow-200: #ffdb9e;
   --yellow-300: #ffce7a;
   --yellow-400: #ffba42;
   --yellow-500: #e5a638;
-
+  
+  --purple-50:#e9c4ff;
   --purple-100: #ca89f1;
   --purple-200: #aa41e9;
   --purple-300: #9512e3;
   --purple-400: #8610cc;
   --purple-500: #680d9f;
 
+  --red-50:#ffd0dc;
   --red-100: #f383a1;
   --red-200: #e92055;
   --red-300: #e60742;
@@ -122,3 +125,9 @@ p {
   color: var(--color-primary-500);
 }
 
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
