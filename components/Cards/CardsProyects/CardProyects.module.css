@@ -1,0 +1,47 @@
+
+.cardProyects header {
+  margin-bottom: 1rem;
+}
+.cardProyects img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.cardProyects > div,
+.cardProyects footer {
+  padding: 1rem;
+}
+
+.cardProyects a{
+  font-size: .8rem;
+}
+
+.cardProyects footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cardProyects a{
+  background-color: var(--color-primary-300);
+  padding: .5rem 2rem;
+  color: var(--white);
+  font-size: .9rem;  
+}
+
+
+.cardProyects a.second{
+  padding: 0;
+  background: none;
+  color: var(--gray-500);
+}
+
+.cardProyects p{
+  font-size: .9rem;
+}
+.cardProyects svg{
+  vertical-align: middle;
+}

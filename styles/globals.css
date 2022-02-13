@@ -7,11 +7,11 @@
   --color-primary-400: #054caa;
   --color-primary-500: #044394;
 
-  --black-100: #2f3033;
+  --black-100: #132f4c;
   --black-200: #24262c;
   --black-300: #0c0e15;
-  --black-400: #001E3C;
-  --black-500: #0A1929;
+  --black-400: #001e3c;
+  --black-500: #0a1929;
 
   --gray-100: #f9fbfe;
   --gray-200: #f4f8fd;
@@ -54,7 +54,7 @@
   --size: 14px;
 }
 
-html, 
+html,
 body {
   padding: 0;
   margin: 0;
@@ -69,14 +69,16 @@ body {
   :root {
     --size: 16px;
   }
-} 
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -100,6 +102,7 @@ h4 {
 }
 
 p {
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -111,10 +114,11 @@ p {
 }
 
 .dark {
-  background-color: var(--black-400);
+  background-color: var(--black-500);
   color: var(--gray-300);
 }
 
-.iconDark{
-  color: var(--color-primary-500)
+.iconDark {
+  color: var(--color-primary-500);
 }
+
