@@ -5,7 +5,7 @@ import Card from "../../Cards";
 export default function CardProyects({ image, copy }) {
   const { isDarkMode } = useTheme();
   return (
-    <Card className={style.cardProyects} >
+    <Card className={style.cardProyects}>
       <header>
         <img src={image} alt="image" />
       </header>
