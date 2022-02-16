@@ -1,0 +1,52 @@
+
+
+.formGroup {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+
+.formInput {
+  display: block;
+  width: 100%;
+  padding: .8rem 1rem;
+  border: 1px solid var(--gray-400);
+  background-color: transparent;
+  color: var(--gray-500);
+  outline: none;
+}
+
+.formInput:focus{
+  border-color: var(--color-primary-100);
+  box-shadow: 0 3px 20px var(--color-primary-50);
+  caret-color: var(--gray-500);
+  color: var(--gray-500);
+}
+
+.button{
+  width: 100%;
+  padding: .8rem;
+  border:none;
+  color: var(--white);
+  background: var(--color-primary-300);
+  font-size:1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.button:hover{
+  opacity: .9;
+}
+.button:active{
+  opacity: .9;
+}
+
+.textArea{
+  height: 150px;
+  resize: none;
+  font-family: inherit;
+}

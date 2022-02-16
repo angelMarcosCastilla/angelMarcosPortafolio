@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,600&family=Roboto&display=swap");
 
 :root {
+  --color-primary-50: #a9ceff;
   --color-primary-100: #6ba4f0;
   --color-primary-200: #1f6fd8;
   --color-primary-300: #065fd4;
