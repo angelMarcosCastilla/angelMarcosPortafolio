@@ -2,22 +2,21 @@ import useTheme from "../../../hooks/useTheme";
 import style from "./CardProyects.module.css";
 import { IoArrowRedoCircleOutline } from "react-icons/io5";
 import Card from "../../Cards";
-export default function CardProyects({ image, copy }) {
+export default function CardProyects({ urlImg, name, urlRepo,urlview}) {
   const { isDarkMode } = useTheme();
   return (
     <Card className={style.cardProyects}>
       <header>
-        <img src={image} alt="image" />
+        <img src={urlImg} alt="image" />
       </header>
       <div>
-        <p>{copy}</p>
+        <p>{name}</p>
       </div>
       <footer>
-        <a href="#" className={style.second}>
-          {" "}
+        <a href={urlRepo} className={style.second}>
           ver repositorio <IoArrowRedoCircleOutline />
         </a>
-        <a href="#"> visitar</a>
+        <a href={urlview}> visitar</a>
       </footer>
     </Card>
   );
