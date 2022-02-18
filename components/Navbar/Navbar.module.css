@@ -12,7 +12,12 @@
   left: 0;
   width: 100%;
   z-index: var(--z-index-500);
-  border-top: 1px solid var(--gray-200);
+  background-color: var(--gray-200);
+  box-shadow: 0 0 10px var(--gray-400);
+}
+.dark{
+  background-color: var(--black-400);
+  box-shadow: 0 0 10px var(--black-400);
 }
 
 @media screen and (min-width: 590px) {
@@ -20,6 +25,8 @@
     position: static;
     border: 0;
     width: 50%;
+    background: none;
+    box-shadow: none;
   }
 }
 

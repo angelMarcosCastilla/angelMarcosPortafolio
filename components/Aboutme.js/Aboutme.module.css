@@ -15,13 +15,17 @@
   border-radius: 50%;
   box-shadow: 0 0 10px var(--red-100), 0 20px var(--yellow-500),
     0 40px var(--purple-200), 0 60px var(--color-primary-200),
-    0 80px  var(--green-500);
+    0 80px var(--green-500);
 }
-.dark{
+.dark {
   background-color: var(--black-400);
 }
 .grid > div {
   padding: 1rem;
+}
+.containerImage {
+  margin: auto;
+  width: 80%;
 }
 @media screen and (min-width: 800px) {
   .grid {
@@ -34,6 +38,7 @@
 }
 .containerImage {
   text-align: center;
+  width: 100%;
 }
 
 .grid h4 {

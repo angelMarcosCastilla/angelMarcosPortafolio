@@ -7,7 +7,7 @@ import Switch from "../Switch";
 import style from "./Navbar.module.css";
 
 export default function Navbar() {
-
+   const{isDarkMode} = useTheme();
   return (
     <nav className={`${style.navbar} container`}>
       <Link href={"/"} passHref>
@@ -15,7 +15,7 @@ export default function Navbar() {
           <Image src={logo} width={45} height={40} alt="logo de angel marcos" />
         </a>
       </Link>
-      <div className={style.containerMenu}>
+      <div className={`${style.containerMenu} ${isDarkMode ? style.dark : ""}`}>
         <ul>
           {links.map((link) => (
             <li key={link.id}>
