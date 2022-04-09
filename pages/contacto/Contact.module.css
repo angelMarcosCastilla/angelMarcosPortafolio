@@ -6,20 +6,23 @@
 }
 
 .containerInfo {
-  width: 57%;
+  margin-top: -2rem;
+  width: 52%;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: flex-start;
+  row-gap: 2rem;
 }
 
 .containerInfo > * {
-  width: 45%;
+  width: 40%;
+  flex-shrink: 0;
   margin: auto;
+  
 }
 .containerForm {
   width: 38%;
   padding: 2rem 0;
+  order: -1;
 }
 
 @media screen and (max-width: 1000px) {
@@ -27,11 +30,13 @@
     flex-direction: column;
   }
   .containerInfo {
+    margin: 0;
     width: 90%;
   }
   .containerForm {
     width: 90%;
     padding: 2rem 0;
+    order: 0;
   }
 }
 

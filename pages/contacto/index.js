@@ -1,14 +1,14 @@
-import React from "react";
-import CardContact from "../../components/Cards/cardContact";
-import Layout from "../../components/Layout";
-import Subtitle from "../../components/Subtitle";
-import style from "./Contact.module.css";
+import React from 'react'
+import CardContact from '../../components/Cards/cardContact'
+import Layout from '../../components/Layout'
+import Subtitle from '../../components/Subtitle'
+import style from './Contact.module.css'
 import {
   IoPhonePortrait,
   IoChatboxEllipses,
   IoLocationSharp,
-} from "react-icons/io5";
-import Form from "../../components/Form";
+} from 'react-icons/io5'
+import Form from '../../components/Form'
 
 export default function Contacto() {
   return (
@@ -39,5 +39,5 @@ export default function Contacto() {
         </div>
       </section>
     </Layout>
-  );
+  )
 }

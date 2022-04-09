@@ -7,7 +7,7 @@ import Switch from "../Switch";
 import style from "./Navbar.module.css";
 
 export default function Navbar() {
-   const{isDarkMode} = useTheme();
+  const { isDarkMode } = useTheme();
   return (
     <nav className={`${style.navbar} container`}>
       <Link href={"/"} passHref>
@@ -29,5 +29,5 @@ export default function Navbar() {
 
       <Switch />
     </nav>
-  );
+  )
 }

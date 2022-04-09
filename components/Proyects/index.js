@@ -4,12 +4,14 @@ import Subtitle from "../Subtitle";
 import style from "./Proyects.module.css";
 
 export default function Proyects() {
+  
   const [proyects, setProyects] = useState([]);
   useEffect(() => {
     fetch("/api/proyectos")
       .then((res) => res.json())
       .then(setProyects);
   }, []);
+
   return (
     <section className={style.proyects}>
       <div className="container">
@@ -18,7 +20,7 @@ export default function Proyects() {
           {proyects.map((proyect) => (
             <CardProyects key={proyect.id} {...proyect} />
           ))}
-        </div> 
+        </div>
       </div>
     </section>
   );

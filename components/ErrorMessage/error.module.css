@@ -1,0 +1,7 @@
+.error{
+  font-size: .8rem;
+  color: rgb(255, 0, 68);
+  display: block;
+  text-align: right;
+  margin-top: .3rem;
+}
